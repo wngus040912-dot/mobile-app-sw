@@ -94,6 +94,8 @@ fun KeypadScreen(modifier: Modifier = Modifier) {
                 }
             }
         }
+
+        // 하단 버튼 영역
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -115,12 +117,10 @@ fun KeypadScreen(modifier: Modifier = Modifier) {
                 Text(text = "통화", fontSize = 14.sp, color = Color.Gray)
             }
 
-            // 연락처 버튼
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally,
                 modifier = Modifier.clickable { /* TODO: 연락처 기능 */ }
             ) {
-
                 Text(text = "연락처", fontSize = 14.sp, color = Color.Gray)
             }
         }
