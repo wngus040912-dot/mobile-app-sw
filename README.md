@@ -5,7 +5,7 @@
   <div style="text-align:center;">
     <img src="app/Screenshot_20251029_171325.png" alt="전화번호부" width="180" 
          style="border-radius:10px; box-shadow:0 0 8px rgba(0,0,0,0.2); display:block; margin-bottom:6px;"/>
-    <p style="font-size:13px; color:gray; margin:0;">📞 전화번호부 앱 – 연락처 관리</p>
+    <p style="font-size:13px; color:gray; margin:0;">📞 전화번호부 앱
   </div>
 
   <div style="text-align:center;">
