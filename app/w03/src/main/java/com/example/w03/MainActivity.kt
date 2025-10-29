@@ -1,18 +1,19 @@
-package com.example.myapplication
+package com.example.w03
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -54,7 +55,7 @@ fun KeypadScreen(modifier: Modifier = Modifier) {
         )
         Text(
             text = "L.J.H. Phone",
-            color = Color.Black,
+            color = MaterialTheme.colorScheme.onBackground,
             fontSize = 15.sp,
             modifier = Modifier.padding(top = 16.dp)
         )
@@ -63,7 +64,8 @@ fun KeypadScreen(modifier: Modifier = Modifier) {
             fontSize = 40.sp,
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(vertical = 20.dp),
-            textAlign = TextAlign.Center
+            textAlign = TextAlign.Center,
+            color = MaterialTheme.colorScheme.onBackground
         )
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -94,8 +96,6 @@ fun KeypadScreen(modifier: Modifier = Modifier) {
                 }
             }
         }
-
-        // 하단 버튼 영역
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -103,25 +103,36 @@ fun KeypadScreen(modifier: Modifier = Modifier) {
             horizontalArrangement = Arrangement.SpaceEvenly,
             verticalAlignment = Alignment.CenterVertically
         ) {
+            val bottomButtonColor = MaterialTheme.colorScheme.onSurfaceVariant
+
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally,
-                modifier = Modifier.clickable { /* TODO: 최근기록 기능 */ }
+                modifier = Modifier
+                    .clip(CircleShape)
+                    .clickable { /* TODO: 최근기록 기능 */ }
+                    .padding(8.dp)
             ) {
-                Text(text = "최근기록", fontSize = 14.sp, color = Color.Gray)
+                Text(text = "최근기록", fontSize = 14.sp, color = bottomButtonColor)
             }
 
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally,
-                modifier = Modifier.clickable { /* TODO: 전화 기능 */ }
+                modifier = Modifier
+                    .clip(CircleShape)
+                    .clickable { /* TODO: 전화 기능 */ }
+                    .padding(8.dp)
             ) {
-                Text(text = "통화", fontSize = 14.sp, color = Color.Gray)
+                Text(text = "통화", fontSize = 14.sp, color = bottomButtonColor)
             }
 
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally,
-                modifier = Modifier.clickable { /* TODO: 연락처 기능 */ }
+                modifier = Modifier
+                    .clip(CircleShape)
+                    .clickable { /* TODO: 연락처 기능 */ }
+                    .padding(8.dp)
             ) {
-                Text(text = "연락처", fontSize = 14.sp, color = Color.Gray)
+                Text(text = "연락처", fontSize = 14.sp, color = bottomButtonColor)
             }
         }
     }
@@ -132,15 +143,16 @@ fun KeyButton(label: String, onClick: () -> Unit) {
     Box(
         modifier = Modifier
             .size(80.dp)
-            .padding(8.dp)
+            .clip(CircleShape)
             .clickable { onClick() }
-            .background(Color.Transparent),
+            .padding(8.dp),
         contentAlignment = Alignment.Center
     ) {
         Text(
             text = label,
-            style = MaterialTheme.typography.headlineMedium,
-            textAlign = TextAlign.Center
+            style = MaterialTheme.typography.headlineLarge,
+            textAlign = TextAlign.Center,
+            color = MaterialTheme.colorScheme.onBackground
         )
     }
 }
