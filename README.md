@@ -25,24 +25,24 @@
   </tr>
 
   <tr>
-    <!-- ✅ 설명 + 이미지 -->
+    <!-- ✅ 핵심 칸 -->
     <td align="center" valign="top">
-      <div style="font-size:13px; text-align:left; max-width:180px; margin-bottom:6px;">
+      <div style="font-size:13px; text-align:left; max-width:180px; margin-bottom:8px;">
         <strong>🐦 참새 사냥 게임</strong><br/><br/>
 
-        🎯 <strong>개요</strong><br/>
+        <strong>🎯 개요</strong><br/>
         장르: 클릭형 캐주얼 슈팅<br/>
         플랫폼: Android 8.0 이상<br/>
         세션 길이: 스테이지당 30초, 총 4스테이지<br/><br/>
 
-        🕹 <strong>플레이 방식</strong><br/>
+        <strong>🕹 플레이 방식</strong><br/>
         화면을 탭해 새를 맞혀 점수 획득<br/>
         제한 시간 내 목표 점수 기록<br/><br/>
 
-        🐦 <strong>등장 개체</strong><br/>
+        <strong>🐦 등장 개체</strong><br/>
         • 참새: +5 (기본 타깃)<br/>
         • 까치: −2 (조금 더 큼)<br/>
-        • 멧새: −4 (빠른 이동, 방해물)<br/>
+        • 멧새: −4 (빠른 이동, 방해물)
       </div>
 
       <img src="app/Screenshot_20251210_1.png" width="180"><br/>
