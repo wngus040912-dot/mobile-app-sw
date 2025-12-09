@@ -32,7 +32,7 @@
   <div style="text-align:center;">
     <img src="app/Screenshot_20251210_1.png" alt="앱 화면 1 설명" width="180" 
          style="border-radius:10px; box-shadow:0 0 8px rgba(0,0,0,0.2); display:block; margin-bottom:6px;"/>
-    <p style="font-size:13px; color:gray; margin:0;">✨ 게임 실행 중</p>
+    <p style="font-size:13px; color:gray; margin:0;">✨ 게임 실행 중</p>
   </div>
 
   <div style="text-align:center;">
