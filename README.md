@@ -1,6 +1,6 @@
 <h2 align="center">🌟 앱 미리보기</h2>
 
-<div align="center" style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
+<div align="center" style="display:flex; justify-content:center; gap:20px;">
 
   <div style="text-align:center;">
     <img src="app/Screenshot_20251029_171325.png" width="180">
@@ -21,6 +21,12 @@
     <img src="app/Screenshot_20251029_204310.png" width="180">
     <p>🎮 버블 게임</p>
   </div>
+
+</div>
+
+<br/>
+
+<div align="center" style="display:flex; justify-content:center; gap:20px;">
 
   <div style="text-align:center;">
     <img src="app/Screenshot_20251029_213614.png" width="180">
