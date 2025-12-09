@@ -27,4 +27,24 @@
          style="border-radius:10px; box-shadow:0 0 8px rgba(0,0,0,0.2); display:block; margin-bottom:6px;"/>
     <p style="font-size:13px; color:gray; margin:0;">🕹️ 버튼 게임 (버튼 클릭을 누를 시 점수가 쌓임 w06 참조)</p>
 
+    <div align="center" style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
+
+  <div style="text-align:center;">
+    <img src="ui 화면 1.png" alt="앱 화면 1 설명" width="180" 
+         style="border-radius:10px; box-shadow:0 0 8px rgba(0,0,0,0.2); display:block; margin-bottom:6px;"/>
+    <p style="font-size:13px; color:gray; margin:0;">✨ 게임 실행 중</p>
+  </div>
+
+  <div style="text-align:center;">
+    <img src="ui 화면 2.jpg" alt="앱 화면 2 설명" width="180" 
+         style="border-radius:10px; box-shadow:0 0 8px rgba(0,0,0,0.2); display:block; margin-bottom:6px;"/>
+    <p style="font-size:13px; color:gray; margin:0;">✨ 게임 오버</p>
+  </div>
+
+  <div style="text-align:center;">
+    <img src="ui 화면 3.jpg" alt="앱 화면 3 설명" width="180" 
+         style="border-radius:10px; box-shadow:0 0 8px rgba(0,0,0,0.2); display:block; margin-bottom:6px;"/>
+    <p style="font-size:13px; color:gray; margin:0;">✨ 클리어</p>
+  </div>
+
 </div>
